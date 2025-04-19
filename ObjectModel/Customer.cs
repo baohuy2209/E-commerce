@@ -10,5 +10,6 @@
         public DateTime DOB { get; set; }
         public string Gender { get; set; }
         public DateTime FirstBuyDate { get; set; }
+        public string Password { get; set; }
     }
 }

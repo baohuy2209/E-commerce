@@ -1,4 +1,5 @@
-namespace UI
+using UI; 
+namespace TestWindow
 {
     internal static class Program
     {
@@ -11,9 +12,6 @@ namespace UI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Login frmLogin = new Login();
-            //DialogResult result = frmLogin.ShowDialog();
-            //if(result == DialogResult.OK){}
             Application.Run(new Login());
         }
     }
