@@ -1,6 +1,4 @@
-﻿using DAL;
-using ObjectModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,23 +17,28 @@ namespace UI
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-            CustomerConnector cc = new CustomerConnector();
-            string email = textBoxEmail.Text;
-            string password = textBoxPassword.Text;
-            Customer loginCustomer = cc.Login(email, password); 
-            if (loginCustomer != null)
-            {
-                MessageBox.Show("Login successfully");
-                //FormMain.LoginNhanVien = loginemp;
-                //DialogResult = DialogResult.OK;
-            }
+            labelLogin.Parent = pictureBG;
+            labelAU.Parent = pictureBG;
+            labelInfo.Parent = pictureBG;
+            labelE.Parent = pictureBG;
+            labelP.Parent = pictureBG;
+            linklabelTAP.Parent = pictureBG;
+            linkLabelRM.Parent = pictureBG;
+            checkboxTAP.Parent = pictureBG;
+            buttonLogin.Parent = pictureBG;
+            //pictureIcon.Parent = pictureBG;
+            labelLogin.BackColor = Color.Transparent;
+            labelLogin.BackColor = Color.Transparent;
+            labelInfo.BackColor = Color.Transparent;
+            labelP.BackColor = Color.Transparent;
+            labelE.BackColor = Color.Transparent;
+            linklabelTAP.BackColor = Color.Transparent;
+            linkLabelRM.BackColor = Color.Transparent;
+            checkboxTAP.BackColor = Color.Transparent;
+            buttonLogin.BackColor = Color.Transparent;
+            //pictureIcon.BackColor = Color.Transparent;
         }
     }
 }

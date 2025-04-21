@@ -29,245 +29,192 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            splitContainer1 = new SplitContainer();
-            panel1 = new Panel();
-            groupBox1 = new GroupBox();
-            pictureBox1 = new PictureBox();
-            buttonReadMore = new Button();
-            panel2 = new Panel();
-            Authentication = new GroupBox();
-            label3 = new Label();
-            checkBoxTermAndPolicy = new CheckBox();
+            pictureBG = new PictureBox();
+            labelLogin = new Label();
+            labelAU = new Label();
+            labelInfo = new Label();
+            textboxEmail = new TextBox();
+            textboxPassword = new TextBox();
+            labelE = new Label();
+            labelP = new Label();
             buttonLogin = new Button();
-            textBoxEmail = new TextBox();
-            label2 = new Label();
-            textBoxPassword = new TextBox();
-            button3 = new Button();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
-            panel1.SuspendLayout();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            Authentication.SuspendLayout();
+            linklabelTAP = new LinkLabel();
+            checkboxTAP = new CheckBox();
+            linkLabelRM = new LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             SuspendLayout();
             // 
-            // splitContainer1
+            // pictureBG
             // 
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 0);
-            splitContainer1.Name = "splitContainer1";
+            pictureBG.BackgroundImage = Properties.Resources.LoginBG;
+            pictureBG.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBG.Location = new Point(-1, -1);
+            pictureBG.Name = "pictureBG";
+            pictureBG.Size = new Size(1377, 1423);
+            pictureBG.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBG.TabIndex = 0;
+            pictureBG.TabStop = false;
             // 
-            // splitContainer1.Panel1
+            // labelLogin
             // 
-            splitContainer1.Panel1.Controls.Add(panel1);
+            labelLogin.AutoSize = true;
+            labelLogin.BackColor = Color.Transparent;
+            labelLogin.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
+            labelLogin.ForeColor = SystemColors.ButtonHighlight;
+            labelLogin.Location = new Point(903, 193);
+            labelLogin.Name = "labelLogin";
+            labelLogin.Size = new Size(163, 68);
+            labelLogin.TabIndex = 11;
+            labelLogin.Text = "Login";
             // 
-            // splitContainer1.Panel2
+            // labelAU
             // 
-            splitContainer1.Panel2.Controls.Add(panel2);
-            splitContainer1.Size = new Size(1136, 644);
-            splitContainer1.SplitterDistance = 542;
-            splitContainer1.TabIndex = 0;
+            labelAU.AutoSize = true;
+            labelAU.BackColor = Color.Transparent;
+            labelAU.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
+            labelAU.ForeColor = SystemColors.ControlText;
+            labelAU.Location = new Point(315, 193);
+            labelAU.Name = "labelAU";
+            labelAU.Size = new Size(252, 68);
+            labelAU.TabIndex = 11;
+            labelAU.Text = "About Us";
             // 
-            // panel1
+            // labelInfo
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.Controls.Add(groupBox1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(542, 644);
-            panel1.TabIndex = 0;
+            labelInfo.AutoSize = true;
+            labelInfo.BackColor = Color.Transparent;
+            labelInfo.Font = new Font("Segoe UI", 13.8F);
+            labelInfo.ForeColor = SystemColors.ControlText;
+            labelInfo.Location = new Point(287, 324);
+            labelInfo.Name = "labelInfo";
+            labelInfo.Size = new Size(317, 279);
+            labelInfo.TabIndex = 11;
+            labelInfo.Text = resources.GetString("labelInfo.Text");
             // 
-            // groupBox1
+            // textboxEmail
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox1.Controls.Add(pictureBox1);
-            groupBox1.Controls.Add(buttonReadMore);
-            groupBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(12, 9);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(517, 623);
-            groupBox1.TabIndex = 2;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Information";
+            textboxEmail.Font = new Font("Segoe UI", 14F);
+            textboxEmail.Location = new Point(780, 358);
+            textboxEmail.Name = "textboxEmail";
+            textboxEmail.Size = new Size(383, 39);
+            textboxEmail.TabIndex = 12;
             // 
-            // pictureBox1
+            // textboxPassword
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(57, 42);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(409, 269);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            textboxPassword.Font = new Font("Segoe UI", 14F);
+            textboxPassword.Location = new Point(780, 490);
+            textboxPassword.Name = "textboxPassword";
+            textboxPassword.Size = new Size(383, 39);
+            textboxPassword.TabIndex = 12;
             // 
-            // buttonReadMore
+            // labelE
             // 
-            buttonReadMore.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            buttonReadMore.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonReadMore.Location = new Point(173, 329);
-            buttonReadMore.Name = "buttonReadMore";
-            buttonReadMore.Size = new Size(158, 49);
-            buttonReadMore.TabIndex = 1;
-            buttonReadMore.Text = "READ MORE";
-            buttonReadMore.UseVisualStyleBackColor = true;
+            labelE.AutoSize = true;
+            labelE.BackColor = Color.Transparent;
+            labelE.Font = new Font("Segoe UI", 13.8F);
+            labelE.ForeColor = SystemColors.ButtonHighlight;
+            labelE.Location = new Point(780, 324);
+            labelE.Name = "labelE";
+            labelE.Size = new Size(70, 31);
+            labelE.TabIndex = 11;
+            labelE.Text = "Email";
             // 
-            // panel2
+            // labelP
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.Controls.Add(Authentication);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(label1);
-            panel2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(590, 644);
-            panel2.TabIndex = 0;
-            // 
-            // Authentication
-            // 
-            Authentication.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            Authentication.Controls.Add(label3);
-            Authentication.Controls.Add(checkBoxTermAndPolicy);
-            Authentication.Controls.Add(buttonLogin);
-            Authentication.Controls.Add(textBoxEmail);
-            Authentication.Controls.Add(label2);
-            Authentication.Controls.Add(textBoxPassword);
-            Authentication.Location = new Point(22, 65);
-            Authentication.Name = "Authentication";
-            Authentication.Size = new Size(547, 567);
-            Authentication.TabIndex = 9;
-            Authentication.TabStop = false;
-            Authentication.Text = "Authentication";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(19, 40);
-            label3.Name = "label3";
-            label3.Size = new Size(76, 32);
-            label3.TabIndex = 2;
-            label3.Text = "Email:";
-            // 
-            // checkBoxTermAndPolicy
-            // 
-            checkBoxTermAndPolicy.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            checkBoxTermAndPolicy.AutoSize = true;
-            checkBoxTermAndPolicy.Location = new Point(19, 273);
-            checkBoxTermAndPolicy.Name = "checkBoxTermAndPolicy";
-            checkBoxTermAndPolicy.Size = new Size(335, 29);
-            checkBoxTermAndPolicy.TabIndex = 8;
-            checkBoxTermAndPolicy.Text = "I agree all term condition and policy";
-            checkBoxTermAndPolicy.UseVisualStyleBackColor = true;
+            labelP.AutoSize = true;
+            labelP.BackColor = Color.Transparent;
+            labelP.Font = new Font("Segoe UI", 13.8F);
+            labelP.ForeColor = SystemColors.ButtonHighlight;
+            labelP.Location = new Point(780, 456);
+            labelP.Name = "labelP";
+            labelP.Size = new Size(110, 31);
+            labelP.TabIndex = 11;
+            labelP.Text = "Password";
             // 
             // buttonLogin
             // 
-            buttonLogin.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            buttonLogin.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonLogin.Location = new Point(105, 323);
+            buttonLogin.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonLogin.Location = new Point(936, 637);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(338, 49);
-            buttonLogin.TabIndex = 6;
+            buttonLogin.Size = new Size(101, 48);
+            buttonLogin.TabIndex = 13;
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = true;
-            buttonLogin.Click += buttonLogin_Click;
             // 
-            // textBoxEmail
+            // linklabelTAP
             // 
-            textBoxEmail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxEmail.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxEmail.Location = new Point(19, 89);
-            textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(508, 39);
-            textBoxEmail.TabIndex = 3;
+            linklabelTAP.AutoSize = true;
+            linklabelTAP.Font = new Font("Segoe UI", 10F);
+            linklabelTAP.LinkColor = Color.White;
+            linklabelTAP.Location = new Point(912, 697);
+            linklabelTAP.Name = "linklabelTAP";
+            linklabelTAP.Size = new Size(148, 23);
+            linklabelTAP.TabIndex = 14;
+            linklabelTAP.TabStop = true;
+            linklabelTAP.Text = "Terms and Policies";
             // 
-            // label2
+            // checkboxTAP
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(19, 148);
-            label2.Name = "label2";
-            label2.Size = new Size(116, 32);
-            label2.TabIndex = 4;
-            label2.Text = "Password:";
+            checkboxTAP.AutoSize = true;
+            checkboxTAP.BackColor = Color.Transparent;
+            checkboxTAP.ForeColor = SystemColors.ButtonHighlight;
+            checkboxTAP.Location = new Point(780, 554);
+            checkboxTAP.Name = "checkboxTAP";
+            checkboxTAP.Size = new Size(228, 24);
+            checkboxTAP.TabIndex = 15;
+            checkboxTAP.Text = "I accept all Terms and Policies";
+            checkboxTAP.UseVisualStyleBackColor = false;
             // 
-            // textBoxPassword
+            // linkLabelRM
             // 
-            textBoxPassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxPassword.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxPassword.Location = new Point(19, 195);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(508, 39);
-            textBoxPassword.TabIndex = 5;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(40, 51);
-            button3.Name = "button3";
-            button3.Size = new Size(8, 8);
-            button3.TabIndex = 7;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.FlatStyle = FlatStyle.Popup;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(173, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(266, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Welcome to Shop Store";
+            linkLabelRM.AutoSize = true;
+            linkLabelRM.Font = new Font("Segoe UI", 10F);
+            linkLabelRM.LinkColor = Color.Black;
+            linkLabelRM.Location = new Point(386, 697);
+            linkLabelRM.Name = "linkLabelRM";
+            linkLabelRM.Size = new Size(93, 23);
+            linkLabelRM.TabIndex = 14;
+            linkLabelRM.TabStop = true;
+            linkLabelRM.Text = "Read More";
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1136, 644);
-            Controls.Add(splitContainer1);
+            ClientSize = new Size(1375, 887);
+            Controls.Add(checkboxTAP);
+            Controls.Add(linkLabelRM);
+            Controls.Add(linklabelTAP);
+            Controls.Add(buttonLogin);
+            Controls.Add(textboxPassword);
+            Controls.Add(textboxEmail);
+            Controls.Add(labelP);
+            Controls.Add(labelE);
+            Controls.Add(labelInfo);
+            Controls.Add(labelAU);
+            Controls.Add(labelLogin);
+            Controls.Add(pictureBG);
             Name = "Login";
             Text = "Login";
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            Authentication.ResumeLayout(false);
-            Authentication.PerformLayout();
+            Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBG).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private SplitContainer splitContainer1;
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private Button buttonReadMore;
-        private Panel panel2;
-        private TextBox textBoxEmail;
-        private Label label3;
-        private Label label1;
-        private CheckBox checkBoxTermAndPolicy;
-        private Button button3;
+        private PictureBox pictureBG;
+        private Label labelLogin;
+        private Label labelAU;
+        private Label labelInfo;
+        private TextBox textboxEmail;
+        private TextBox textboxPassword;
+        private Label labelE;
+        private Label labelP;
         private Button buttonLogin;
-        private TextBox textBoxPassword;
-        private Label label2;
-        private GroupBox groupBox1;
-        private GroupBox Authentication;
+        private LinkLabel linklabelTAP;
+        private CheckBox checkboxTAP;
+        private LinkLabel linkLabelRM;
     }
 }

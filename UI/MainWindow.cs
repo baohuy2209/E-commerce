@@ -22,7 +22,6 @@ namespace UI
             labelSP2.Parent = pictureBG;
             labelFooter.Parent = pictureBG;
             labelTitle.Parent = pictureBG;
-            //buttonHome.Parent = pictureBG;
             labelSP1.BackColor = Color.Transparent;
             labelSP2.BackColor = Color.Transparent;
             labelFooter.BackColor = Color.Transparent;
