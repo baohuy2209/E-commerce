@@ -38,9 +38,10 @@
             labelE = new Label();
             labelP = new Label();
             buttonLogin = new Button();
+            linklabelRM = new LinkLabel();
             linklabelTAP = new LinkLabel();
-            checkboxTAP = new CheckBox();
-            linkLabelRM = new LinkLabel();
+            checkboxKMLI = new CheckBox();
+            linklabelFP = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             SuspendLayout();
             // 
@@ -141,50 +142,63 @@
             buttonLogin.Text = "Login";
             buttonLogin.UseVisualStyleBackColor = true;
             // 
+            // linklabelRM
+            // 
+            linklabelRM.AutoSize = true;
+            linklabelRM.Font = new Font("Segoe UI", 10F);
+            linklabelRM.LinkColor = Color.Black;
+            linklabelRM.Location = new Point(386, 697);
+            linklabelRM.Name = "linklabelRM";
+            linklabelRM.Size = new Size(93, 23);
+            linklabelRM.TabIndex = 14;
+            linklabelRM.TabStop = true;
+            linklabelRM.Text = "Read More";
+            // 
             // linklabelTAP
             // 
             linklabelTAP.AutoSize = true;
             linklabelTAP.Font = new Font("Segoe UI", 10F);
             linklabelTAP.LinkColor = Color.White;
-            linklabelTAP.Location = new Point(912, 697);
+            linklabelTAP.Location = new Point(914, 697);
             linklabelTAP.Name = "linklabelTAP";
             linklabelTAP.Size = new Size(148, 23);
             linklabelTAP.TabIndex = 14;
             linklabelTAP.TabStop = true;
             linklabelTAP.Text = "Terms and Policies";
             // 
-            // checkboxTAP
+            // checkboxKMLI
             // 
-            checkboxTAP.AutoSize = true;
-            checkboxTAP.BackColor = Color.Transparent;
-            checkboxTAP.ForeColor = SystemColors.ButtonHighlight;
-            checkboxTAP.Location = new Point(780, 554);
-            checkboxTAP.Name = "checkboxTAP";
-            checkboxTAP.Size = new Size(228, 24);
-            checkboxTAP.TabIndex = 15;
-            checkboxTAP.Text = "I accept all Terms and Policies";
-            checkboxTAP.UseVisualStyleBackColor = false;
+            checkboxKMLI.AutoSize = true;
+            checkboxKMLI.BackColor = Color.Transparent;
+            checkboxKMLI.ForeColor = SystemColors.ButtonHighlight;
+            checkboxKMLI.Location = new Point(780, 535);
+            checkboxKMLI.Name = "checkboxKMLI";
+            checkboxKMLI.Size = new Size(158, 24);
+            checkboxKMLI.TabIndex = 15;
+            checkboxKMLI.Text = "Keep me logged in";
+            checkboxKMLI.UseVisualStyleBackColor = false;
             // 
-            // linkLabelRM
+            // linklabelFP
             // 
-            linkLabelRM.AutoSize = true;
-            linkLabelRM.Font = new Font("Segoe UI", 10F);
-            linkLabelRM.LinkColor = Color.Black;
-            linkLabelRM.Location = new Point(386, 697);
-            linkLabelRM.Name = "linkLabelRM";
-            linkLabelRM.Size = new Size(93, 23);
-            linkLabelRM.TabIndex = 14;
-            linkLabelRM.TabStop = true;
-            linkLabelRM.Text = "Read More";
+            linklabelFP.AutoSize = true;
+            linklabelFP.Font = new Font("Segoe UI", 9F);
+            linklabelFP.LinkColor = Color.White;
+            linklabelFP.Location = new Point(1043, 536);
+            linklabelFP.Name = "linklabelFP";
+            linklabelFP.Size = new Size(120, 20);
+            linklabelFP.TabIndex = 14;
+            linklabelFP.TabStop = true;
+            linklabelFP.Text = "Forgot password";
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1375, 887);
-            Controls.Add(checkboxTAP);
-            Controls.Add(linkLabelRM);
+            Controls.Add(checkboxKMLI);
+            Controls.Add(linklabelFP);
             Controls.Add(linklabelTAP);
+            Controls.Add(linklabelRM);
             Controls.Add(buttonLogin);
             Controls.Add(textboxPassword);
             Controls.Add(textboxEmail);
@@ -213,8 +227,9 @@
         private Label labelE;
         private Label labelP;
         private Button buttonLogin;
+        private LinkLabel linklabelRM;
         private LinkLabel linklabelTAP;
-        private CheckBox checkboxTAP;
-        private LinkLabel linkLabelRM;
+        private CheckBox checkboxKMLI;
+        private LinkLabel linklabelFP;
     }
 }

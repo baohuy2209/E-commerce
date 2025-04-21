@@ -25,8 +25,10 @@ namespace UI
             labelE.Parent = pictureBG;
             labelP.Parent = pictureBG;
             linklabelTAP.Parent = pictureBG;
-            linkLabelRM.Parent = pictureBG;
-            checkboxTAP.Parent = pictureBG;
+            linklabelFP.Parent = pictureBG;
+            linklabelRM.Parent = pictureBG;
+            checkboxKMLI.Parent = pictureBG;
+            //checkboxTAP.Parent = pictureBG;
             buttonLogin.Parent = pictureBG;
             //pictureIcon.Parent = pictureBG;
             labelLogin.BackColor = Color.Transparent;
@@ -35,8 +37,10 @@ namespace UI
             labelP.BackColor = Color.Transparent;
             labelE.BackColor = Color.Transparent;
             linklabelTAP.BackColor = Color.Transparent;
-            linkLabelRM.BackColor = Color.Transparent;
-            checkboxTAP.BackColor = Color.Transparent;
+            linklabelFP.BackColor = Color.Transparent;
+            checkboxKMLI.BackColor = Color.Transparent;
+            linklabelRM.BackColor = Color.Transparent;
+            //checkboxTAP.BackColor = Color.Transparent;
             buttonLogin.BackColor = Color.Transparent;
             //pictureIcon.BackColor = Color.Transparent;
         }
