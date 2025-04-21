@@ -48,7 +48,7 @@
             // buttonHome
             // 
             buttonHome.Font = new Font("Segoe UI", 15F);
-            buttonHome.Location = new Point(606, 61);
+            buttonHome.Location = new Point(690, 59);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(128, 51);
             buttonHome.TabIndex = 1;
@@ -58,7 +58,7 @@
             // buttonAbout
             // 
             buttonAbout.Font = new Font("Segoe UI", 15F);
-            buttonAbout.Location = new Point(745, 61);
+            buttonAbout.Location = new Point(829, 59);
             buttonAbout.Name = "buttonAbout";
             buttonAbout.Size = new Size(126, 51);
             buttonAbout.TabIndex = 1;
@@ -68,7 +68,7 @@
             // buttonProduct
             // 
             buttonProduct.Font = new Font("Segoe UI", 15F);
-            buttonProduct.Location = new Point(882, 61);
+            buttonProduct.Location = new Point(966, 59);
             buttonProduct.Name = "buttonProduct";
             buttonProduct.Size = new Size(126, 51);
             buttonProduct.TabIndex = 1;
@@ -78,7 +78,7 @@
             // buttonFeedback
             // 
             buttonFeedback.Font = new Font("Segoe UI", 15F);
-            buttonFeedback.Location = new Point(1019, 61);
+            buttonFeedback.Location = new Point(1103, 59);
             buttonFeedback.Name = "buttonFeedback";
             buttonFeedback.Size = new Size(142, 51);
             buttonFeedback.TabIndex = 1;
@@ -89,7 +89,7 @@
             // 
             buttonCart.Font = new Font("Segoe UI", 15F);
             buttonCart.Image = TestWindow.Properties.Resources.Cart;
-            buttonCart.Location = new Point(1181, 61);
+            buttonCart.Location = new Point(1265, 59);
             buttonCart.Name = "buttonCart";
             buttonCart.Size = new Size(56, 51);
             buttonCart.TabIndex = 1;

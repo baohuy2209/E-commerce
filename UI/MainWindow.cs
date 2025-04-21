@@ -16,5 +16,20 @@ namespace UI
         {
             InitializeComponent();
         }
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            labelSP1.Parent = pictureBG;
+            labelSP2.Parent = pictureBG;
+            //buttonHome.Parent = pictureBG;
+            labelSP1.BackColor = Color.Transparent;
+            labelSP2.BackColor = Color.Transparent;
+            //buttonHome.BackColor = Color.Transparent;
+        }
+
+        private void labelSP2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
