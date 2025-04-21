@@ -30,18 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             pictureBG = new PictureBox();
-            labelLogin = new Label();
+            labelSI = new Label();
             labelAU = new Label();
             labelInfo = new Label();
             textboxEmail = new TextBox();
             textboxPassword = new TextBox();
             labelE = new Label();
-            labelP = new Label();
-            buttonLogin = new Button();
+            labelO = new Label();
+            buttonSI = new Button();
             linklabelRM = new LinkLabel();
             linklabelTAP = new LinkLabel();
             checkboxKMLI = new CheckBox();
             linklabelFP = new LinkLabel();
+            buttonSU = new Button();
+            labelP = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             SuspendLayout();
             // 
@@ -56,17 +58,17 @@
             pictureBG.TabIndex = 0;
             pictureBG.TabStop = false;
             // 
-            // labelLogin
+            // labelSI
             // 
-            labelLogin.AutoSize = true;
-            labelLogin.BackColor = Color.Transparent;
-            labelLogin.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
-            labelLogin.ForeColor = SystemColors.ButtonHighlight;
-            labelLogin.Location = new Point(903, 193);
-            labelLogin.Name = "labelLogin";
-            labelLogin.Size = new Size(163, 68);
-            labelLogin.TabIndex = 11;
-            labelLogin.Text = "Login";
+            labelSI.AutoSize = true;
+            labelSI.BackColor = Color.Transparent;
+            labelSI.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
+            labelSI.ForeColor = SystemColors.ButtonHighlight;
+            labelSI.Location = new Point(866, 193);
+            labelSI.Name = "labelSI";
+            labelSI.Size = new Size(196, 68);
+            labelSI.TabIndex = 11;
+            labelSI.Text = "Sign In";
             // 
             // labelAU
             // 
@@ -120,27 +122,27 @@
             labelE.TabIndex = 11;
             labelE.Text = "Email";
             // 
-            // labelP
+            // labelO
             // 
-            labelP.AutoSize = true;
-            labelP.BackColor = Color.Transparent;
-            labelP.Font = new Font("Segoe UI", 13.8F);
-            labelP.ForeColor = SystemColors.ButtonHighlight;
-            labelP.Location = new Point(780, 456);
-            labelP.Name = "labelP";
-            labelP.Size = new Size(110, 31);
-            labelP.TabIndex = 11;
-            labelP.Text = "Password";
+            labelO.AutoSize = true;
+            labelO.BackColor = Color.Transparent;
+            labelO.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelO.ForeColor = SystemColors.ButtonHighlight;
+            labelO.Location = new Point(952, 643);
+            labelO.Name = "labelO";
+            labelO.Size = new Size(40, 31);
+            labelO.TabIndex = 11;
+            labelO.Text = "Or";
             // 
-            // buttonLogin
+            // buttonSI
             // 
-            buttonLogin.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonLogin.Location = new Point(936, 637);
-            buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(101, 48);
-            buttonLogin.TabIndex = 13;
-            buttonLogin.Text = "Login";
-            buttonLogin.UseVisualStyleBackColor = true;
+            buttonSI.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonSI.Location = new Point(808, 634);
+            buttonSI.Name = "buttonSI";
+            buttonSI.Size = new Size(128, 48);
+            buttonSI.TabIndex = 13;
+            buttonSI.Text = "Sign In";
+            buttonSI.UseVisualStyleBackColor = true;
             // 
             // linklabelRM
             // 
@@ -159,7 +161,7 @@
             linklabelTAP.AutoSize = true;
             linklabelTAP.Font = new Font("Segoe UI", 10F);
             linklabelTAP.LinkColor = Color.White;
-            linklabelTAP.Location = new Point(914, 697);
+            linklabelTAP.Location = new Point(898, 697);
             linklabelTAP.Name = "linklabelTAP";
             linklabelTAP.Size = new Size(148, 23);
             linklabelTAP.TabIndex = 14;
@@ -190,6 +192,28 @@
             linklabelFP.TabStop = true;
             linklabelFP.Text = "Forgot password";
             // 
+            // buttonSU
+            // 
+            buttonSU.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonSU.Location = new Point(1006, 634);
+            buttonSU.Name = "buttonSU";
+            buttonSU.Size = new Size(133, 48);
+            buttonSU.TabIndex = 13;
+            buttonSU.Text = "Sign Up";
+            buttonSU.UseVisualStyleBackColor = true;
+            // 
+            // labelP
+            // 
+            labelP.AutoSize = true;
+            labelP.BackColor = Color.Transparent;
+            labelP.Font = new Font("Segoe UI", 13.8F);
+            labelP.ForeColor = SystemColors.ButtonHighlight;
+            labelP.Location = new Point(780, 456);
+            labelP.Name = "labelP";
+            labelP.Size = new Size(110, 31);
+            labelP.TabIndex = 11;
+            labelP.Text = "Password";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -199,14 +223,16 @@
             Controls.Add(linklabelFP);
             Controls.Add(linklabelTAP);
             Controls.Add(linklabelRM);
-            Controls.Add(buttonLogin);
+            Controls.Add(buttonSU);
+            Controls.Add(buttonSI);
             Controls.Add(textboxPassword);
             Controls.Add(textboxEmail);
             Controls.Add(labelP);
+            Controls.Add(labelO);
             Controls.Add(labelE);
             Controls.Add(labelInfo);
             Controls.Add(labelAU);
-            Controls.Add(labelLogin);
+            Controls.Add(labelSI);
             Controls.Add(pictureBG);
             Name = "Login";
             Text = "Login";
@@ -219,17 +245,19 @@
         #endregion
 
         private PictureBox pictureBG;
-        private Label labelLogin;
+        private Label labelSI;
         private Label labelAU;
         private Label labelInfo;
         private TextBox textboxEmail;
         private TextBox textboxPassword;
         private Label labelE;
-        private Label labelP;
-        private Button buttonLogin;
+        private Label labelO;
+        private Button buttonSI;
         private LinkLabel linklabelRM;
         private LinkLabel linklabelTAP;
         private CheckBox checkboxKMLI;
         private LinkLabel linklabelFP;
+        private Button buttonSU;
+        private Label labelP;
     }
 }

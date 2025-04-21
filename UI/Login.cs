@@ -19,29 +19,31 @@ namespace UI
 
         private void Login_Load(object sender, EventArgs e)
         {
-            labelLogin.Parent = pictureBG;
+            labelSI.Parent = pictureBG;
             labelAU.Parent = pictureBG;
             labelInfo.Parent = pictureBG;
             labelE.Parent = pictureBG;
-            labelP.Parent = pictureBG;
+            labelO.Parent = pictureBG;
             linklabelTAP.Parent = pictureBG;
             linklabelFP.Parent = pictureBG;
             linklabelRM.Parent = pictureBG;
+            labelP.Parent = pictureBG;
             checkboxKMLI.Parent = pictureBG;
             //checkboxTAP.Parent = pictureBG;
-            buttonLogin.Parent = pictureBG;
+            buttonSI.Parent = pictureBG;
             //pictureIcon.Parent = pictureBG;
-            labelLogin.BackColor = Color.Transparent;
-            labelLogin.BackColor = Color.Transparent;
+            labelSI.BackColor = Color.Transparent;
+            labelSI.BackColor = Color.Transparent;
             labelInfo.BackColor = Color.Transparent;
-            labelP.BackColor = Color.Transparent;
+            labelO.BackColor = Color.Transparent;
             labelE.BackColor = Color.Transparent;
+            labelP.BackColor = Color.Transparent;   
             linklabelTAP.BackColor = Color.Transparent;
             linklabelFP.BackColor = Color.Transparent;
             checkboxKMLI.BackColor = Color.Transparent;
             linklabelRM.BackColor = Color.Transparent;
             //checkboxTAP.BackColor = Color.Transparent;
-            buttonLogin.BackColor = Color.Transparent;
+            buttonSI.BackColor = Color.Transparent;
             //pictureIcon.BackColor = Color.Transparent;
         }
     }
