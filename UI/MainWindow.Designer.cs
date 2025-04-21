@@ -42,6 +42,8 @@
             pictureBox1 = new PictureBox();
             labelSP1 = new Label();
             buttonAccount = new Button();
+            labelTitle = new Label();
+            labelFooter = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -190,6 +192,32 @@
             buttonAccount.Text = "Account";
             buttonAccount.UseVisualStyleBackColor = true;
             // 
+            // labelTitle
+            // 
+            labelTitle.AutoSize = true;
+            labelTitle.BackColor = Color.Transparent;
+            labelTitle.Font = new Font("Segoe UI", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTitle.ForeColor = SystemColors.ButtonHighlight;
+            labelTitle.Location = new Point(456, 137);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(710, 89);
+            labelTitle.TabIndex = 10;
+            labelTitle.Text = "Welcome to our shop";
+            labelTitle.Click += labelSP2_Click;
+            // 
+            // labelFooter
+            // 
+            labelFooter.AutoSize = true;
+            labelFooter.BackColor = Color.Transparent;
+            labelFooter.Font = new Font("Segoe UI Semilight", 15F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelFooter.ForeColor = SystemColors.ButtonHighlight;
+            labelFooter.Location = new Point(577, 815);
+            labelFooter.Name = "labelFooter";
+            labelFooter.Size = new Size(487, 35);
+            labelFooter.TabIndex = 10;
+            labelFooter.Text = "Hope you have the best shopping experience";
+            labelFooter.Click += labelSP2_Click;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -197,6 +225,8 @@
             ClientSize = new Size(1375, 887);
             Controls.Add(pictureBox1);
             Controls.Add(labelSP1);
+            Controls.Add(labelFooter);
+            Controls.Add(labelTitle);
             Controls.Add(labelSP2);
             Controls.Add(buttonHome);
             Controls.Add(pictureBox2);
@@ -235,5 +265,7 @@
         private PictureBox pictureBox1;
         private Label labelSP1;
         private Button buttonAccount;
+        private Label labelTitle;
+        private Label labelFooter;
     }
 }
