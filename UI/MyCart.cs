@@ -106,6 +106,7 @@ namespace UI
                 BackColor = Color.Transparent
             };
 
+            //boxTT.Anchor= AnchorStyles.None;
             this.Controls.Add(boxTT);
             boxTT.BringToFront();
 
@@ -129,6 +130,7 @@ namespace UI
 
             labelMC.Parent = pictureBG;
             labelMC.BackColor = Color.Transparent;
+            
         }
     }
 }

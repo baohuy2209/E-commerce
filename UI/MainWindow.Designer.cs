@@ -55,7 +55,7 @@
             // 
             buttonCart.Font = new Font("Segoe UI", 15F);
             buttonCart.Image = (Image)resources.GetObject("buttonCart.Image");
-            buttonCart.Location = new Point(1302, 37);
+            buttonCart.Location = new Point(1159, 37);
             buttonCart.Name = "buttonCart";
             buttonCart.Size = new Size(49, 51);
             buttonCart.TabIndex = 3;
@@ -64,7 +64,7 @@
             // buttonFAQ
             // 
             buttonFAQ.Font = new Font("Segoe UI", 15F);
-            buttonFAQ.Location = new Point(1007, 37);
+            buttonFAQ.Location = new Point(864, 37);
             buttonFAQ.Name = "buttonFAQ";
             buttonFAQ.Size = new Size(125, 51);
             buttonFAQ.TabIndex = 4;
@@ -74,7 +74,7 @@
             // buttonProducts
             // 
             buttonProducts.Font = new Font("Segoe UI", 15F);
-            buttonProducts.Location = new Point(856, 37);
+            buttonProducts.Location = new Point(713, 37);
             buttonProducts.Name = "buttonProducts";
             buttonProducts.Size = new Size(129, 51);
             buttonProducts.TabIndex = 5;
@@ -84,7 +84,7 @@
             // buttonAbout
             // 
             buttonAbout.Font = new Font("Segoe UI", 15F);
-            buttonAbout.Location = new Point(720, 37);
+            buttonAbout.Location = new Point(577, 37);
             buttonAbout.Name = "buttonAbout";
             buttonAbout.Size = new Size(119, 51);
             buttonAbout.TabIndex = 6;
@@ -97,7 +97,7 @@
             buttonHome.BackgroundImageLayout = ImageLayout.None;
             buttonHome.FlatStyle = FlatStyle.System;
             buttonHome.Font = new Font("Segoe UI", 15F);
-            buttonHome.Location = new Point(577, 37);
+            buttonHome.Location = new Point(434, 37);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(121, 51);
             buttonHome.TabIndex = 7;
@@ -139,7 +139,7 @@
             // 
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Image = Properties.Resources.Homepic2;
-            pictureBox4.Location = new Point(890, 345);
+            pictureBox4.Location = new Point(800, 343);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(426, 308);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -152,7 +152,7 @@
             labelSP2.BackColor = Color.Transparent;
             labelSP2.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelSP2.ForeColor = SystemColors.ButtonHighlight;
-            labelSP2.Location = new Point(949, 296);
+            labelSP2.Location = new Point(859, 294);
             labelSP2.Name = "labelSP2";
             labelSP2.Size = new Size(318, 46);
             labelSP2.TabIndex = 10;
@@ -185,7 +185,7 @@
             // buttonAccount
             // 
             buttonAccount.Font = new Font("Segoe UI", 15F);
-            buttonAccount.Location = new Point(1151, 37);
+            buttonAccount.Location = new Point(1008, 37);
             buttonAccount.Name = "buttonAccount";
             buttonAccount.Size = new Size(119, 51);
             buttonAccount.TabIndex = 5;
@@ -198,7 +198,7 @@
             labelTitle.BackColor = Color.Transparent;
             labelTitle.Font = new Font("Segoe UI", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelTitle.ForeColor = SystemColors.ButtonHighlight;
-            labelTitle.Location = new Point(456, 137);
+            labelTitle.Location = new Point(366, 135);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(710, 89);
             labelTitle.TabIndex = 10;
@@ -222,7 +222,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1375, 887);
+            ClientSize = new Size(1262, 753);
             Controls.Add(pictureBox1);
             Controls.Add(labelSP1);
             Controls.Add(labelFooter);

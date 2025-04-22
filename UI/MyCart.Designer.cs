@@ -57,7 +57,6 @@
             // 
             // buttonHome
             // 
-            buttonHome.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             buttonHome.BackColor = Color.Transparent;
             buttonHome.BackgroundImageLayout = ImageLayout.None;
             buttonHome.FlatStyle = FlatStyle.System;
@@ -121,7 +120,6 @@
             // 
             // pictureBG
             // 
-            pictureBG.Anchor = AnchorStyles.None;
             pictureBG.BackgroundImage = Properties.Resources.MyCartBG1;
             pictureBG.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBG.Location = new Point(0, -5);

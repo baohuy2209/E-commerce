@@ -51,9 +51,9 @@
             // 
             pictureBG.BackgroundImage = Properties.Resources.LoginBG;
             pictureBG.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBG.Location = new Point(-1, -1);
+            pictureBG.Location = new Point(0, -1);
             pictureBG.Name = "pictureBG";
-            pictureBG.Size = new Size(1377, 1423);
+            pictureBG.Size = new Size(1266, 1143);
             pictureBG.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBG.TabIndex = 0;
             pictureBG.TabStop = false;
@@ -64,7 +64,7 @@
             labelSI.BackColor = Color.Transparent;
             labelSI.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
             labelSI.ForeColor = SystemColors.ButtonHighlight;
-            labelSI.Location = new Point(866, 193);
+            labelSI.Location = new Point(804, 159);
             labelSI.Name = "labelSI";
             labelSI.Size = new Size(196, 68);
             labelSI.TabIndex = 11;
@@ -76,7 +76,7 @@
             labelAU.BackColor = Color.Transparent;
             labelAU.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
             labelAU.ForeColor = SystemColors.ControlText;
-            labelAU.Location = new Point(315, 193);
+            labelAU.Location = new Point(271, 159);
             labelAU.Name = "labelAU";
             labelAU.Size = new Size(252, 68);
             labelAU.TabIndex = 11;
@@ -88,7 +88,7 @@
             labelInfo.BackColor = Color.Transparent;
             labelInfo.Font = new Font("Segoe UI", 13.8F);
             labelInfo.ForeColor = SystemColors.ControlText;
-            labelInfo.Location = new Point(287, 324);
+            labelInfo.Location = new Point(245, 246);
             labelInfo.Name = "labelInfo";
             labelInfo.Size = new Size(317, 279);
             labelInfo.TabIndex = 11;
@@ -97,7 +97,7 @@
             // textboxEmail
             // 
             textboxEmail.Font = new Font("Segoe UI", 14F);
-            textboxEmail.Location = new Point(780, 344);
+            textboxEmail.Location = new Point(712, 308);
             textboxEmail.Name = "textboxEmail";
             textboxEmail.Size = new Size(383, 39);
             textboxEmail.TabIndex = 12;
@@ -105,7 +105,7 @@
             // textboxPassword
             // 
             textboxPassword.Font = new Font("Segoe UI", 14F);
-            textboxPassword.Location = new Point(780, 490);
+            textboxPassword.Location = new Point(712, 424);
             textboxPassword.Name = "textboxPassword";
             textboxPassword.Size = new Size(383, 39);
             textboxPassword.TabIndex = 12;
@@ -116,7 +116,7 @@
             labelE.BackColor = Color.Transparent;
             labelE.Font = new Font("Segoe UI", 13.8F);
             labelE.ForeColor = SystemColors.ButtonHighlight;
-            labelE.Location = new Point(780, 310);
+            labelE.Location = new Point(712, 274);
             labelE.Name = "labelE";
             labelE.Size = new Size(70, 31);
             labelE.TabIndex = 11;
@@ -128,7 +128,7 @@
             labelO.BackColor = Color.Transparent;
             labelO.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelO.ForeColor = SystemColors.ButtonHighlight;
-            labelO.Location = new Point(952, 643);
+            labelO.Location = new Point(887, 557);
             labelO.Name = "labelO";
             labelO.Size = new Size(40, 31);
             labelO.TabIndex = 11;
@@ -137,7 +137,7 @@
             // buttonSI
             // 
             buttonSI.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSI.Location = new Point(808, 634);
+            buttonSI.Location = new Point(743, 548);
             buttonSI.Name = "buttonSI";
             buttonSI.Size = new Size(128, 48);
             buttonSI.TabIndex = 13;
@@ -149,7 +149,7 @@
             linklabelRM.AutoSize = true;
             linklabelRM.Font = new Font("Segoe UI", 10F);
             linklabelRM.LinkColor = Color.Black;
-            linklabelRM.Location = new Point(386, 697);
+            linklabelRM.Location = new Point(354, 585);
             linklabelRM.Name = "linklabelRM";
             linklabelRM.Size = new Size(93, 23);
             linklabelRM.TabIndex = 14;
@@ -161,7 +161,7 @@
             linklabelTAP.AutoSize = true;
             linklabelTAP.Font = new Font("Segoe UI", 10F);
             linklabelTAP.LinkColor = Color.White;
-            linklabelTAP.Location = new Point(898, 697);
+            linklabelTAP.Location = new Point(833, 611);
             linklabelTAP.Name = "linklabelTAP";
             linklabelTAP.Size = new Size(148, 23);
             linklabelTAP.TabIndex = 14;
@@ -173,7 +173,7 @@
             checkboxKMLI.AutoSize = true;
             checkboxKMLI.BackColor = Color.Transparent;
             checkboxKMLI.ForeColor = SystemColors.ButtonHighlight;
-            checkboxKMLI.Location = new Point(780, 535);
+            checkboxKMLI.Location = new Point(712, 469);
             checkboxKMLI.Name = "checkboxKMLI";
             checkboxKMLI.Size = new Size(158, 24);
             checkboxKMLI.TabIndex = 15;
@@ -185,7 +185,7 @@
             linklabelFP.AutoSize = true;
             linklabelFP.Font = new Font("Segoe UI", 9F);
             linklabelFP.LinkColor = Color.White;
-            linklabelFP.Location = new Point(1043, 536);
+            linklabelFP.Location = new Point(975, 470);
             linklabelFP.Name = "linklabelFP";
             linklabelFP.Size = new Size(120, 20);
             linklabelFP.TabIndex = 14;
@@ -195,7 +195,7 @@
             // buttonSU
             // 
             buttonSU.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSU.Location = new Point(1006, 634);
+            buttonSU.Location = new Point(941, 548);
             buttonSU.Name = "buttonSU";
             buttonSU.Size = new Size(133, 48);
             buttonSU.TabIndex = 13;
@@ -208,7 +208,7 @@
             labelP.BackColor = Color.Transparent;
             labelP.Font = new Font("Segoe UI", 13.8F);
             labelP.ForeColor = SystemColors.ButtonHighlight;
-            labelP.Location = new Point(780, 456);
+            labelP.Location = new Point(712, 390);
             labelP.Name = "labelP";
             labelP.Size = new Size(110, 31);
             labelP.TabIndex = 11;
@@ -218,7 +218,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1375, 887);
+            ClientSize = new Size(1262, 753);
             Controls.Add(linklabelTAP);
             Controls.Add(checkboxKMLI);
             Controls.Add(linklabelFP);

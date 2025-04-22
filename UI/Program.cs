@@ -16,7 +16,7 @@ namespace UI
             //if(result == DialogResult.OK){}
 
             //Application.Run(new Login());
-            Application.Run(new MyCart());
+            Application.Run(new Login());
         }
     }
 }
