@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace UI
+﻿namespace UI
 {
     public partial class Login : Form
     {
@@ -37,7 +27,7 @@ namespace UI
             labelInfo.BackColor = Color.Transparent;
             labelO.BackColor = Color.Transparent;
             labelE.BackColor = Color.Transparent;
-            labelP.BackColor = Color.Transparent;   
+            labelP.BackColor = Color.Transparent;
             linklabelTAP.BackColor = Color.Transparent;
             linklabelFP.BackColor = Color.Transparent;
             checkboxKMLI.BackColor = Color.Transparent;
@@ -45,6 +35,11 @@ namespace UI
             //checkboxTAP.BackColor = Color.Transparent;
             buttonSI.BackColor = Color.Transparent;
             //pictureIcon.BackColor = Color.Transparent;
+        }
+
+        private void buttonSU_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,3 @@
-using UI; 
 namespace TestWindow
 {
     internal static class Program
@@ -12,7 +11,8 @@ namespace TestWindow
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainWindow());
+            Application.Run(new UI.MainWindow());
+
         }
     }
 }

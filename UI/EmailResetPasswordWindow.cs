@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class MainWindow : Form
+    public partial class EmailResetPasswordWindow : Form
     {
-        public MainWindow()
+        public EmailResetPasswordWindow()
         {
             InitializeComponent();
         }
