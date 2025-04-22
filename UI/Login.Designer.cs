@@ -97,7 +97,7 @@
             // textboxEmail
             // 
             textboxEmail.Font = new Font("Segoe UI", 14F);
-            textboxEmail.Location = new Point(780, 358);
+            textboxEmail.Location = new Point(780, 344);
             textboxEmail.Name = "textboxEmail";
             textboxEmail.Size = new Size(383, 39);
             textboxEmail.TabIndex = 12;
@@ -116,7 +116,7 @@
             labelE.BackColor = Color.Transparent;
             labelE.Font = new Font("Segoe UI", 13.8F);
             labelE.ForeColor = SystemColors.ButtonHighlight;
-            labelE.Location = new Point(780, 324);
+            labelE.Location = new Point(780, 310);
             labelE.Name = "labelE";
             labelE.Size = new Size(70, 31);
             labelE.TabIndex = 11;
@@ -219,9 +219,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1375, 887);
+            Controls.Add(linklabelTAP);
             Controls.Add(checkboxKMLI);
             Controls.Add(linklabelFP);
-            Controls.Add(linklabelTAP);
             Controls.Add(linklabelRM);
             Controls.Add(buttonSU);
             Controls.Add(buttonSI);
