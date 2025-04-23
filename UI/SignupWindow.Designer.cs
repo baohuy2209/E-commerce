@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupWindow));
             groupBox1 = new GroupBox();
+            checkBox1 = new CheckBox();
+            linkLabel1 = new LinkLabel();
+            label11 = new Label();
+            label10 = new Label();
+            button1 = new Button();
             label9 = new Label();
             dateTimePicker1 = new DateTimePicker();
             textBox6 = new TextBox();
@@ -50,20 +55,15 @@
             label1 = new Label();
             label4 = new Label();
             printDialog1 = new PrintDialog();
-            button1 = new Button();
-            label10 = new Label();
-            radioButton3 = new RadioButton();
-            label11 = new Label();
-            linkLabel1 = new LinkLabel();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
+            groupBox1.Controls.Add(checkBox1);
             groupBox1.Controls.Add(linkLabel1);
             groupBox1.Controls.Add(label11);
-            groupBox1.Controls.Add(radioButton3);
             groupBox1.Controls.Add(label10);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label9);
@@ -94,6 +94,62 @@
             groupBox1.Text = "Sign up";
             groupBox1.Enter += groupBox1_Enter_1;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox1.Location = new Point(24, 521);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(280, 29);
+            checkBox1.TabIndex = 42;
+            checkBox1.Text = "Accept our terms and policies";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel1.Location = new Point(222, 659);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(107, 25);
+            linkLabel1.TabIndex = 41;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Login here";
+            // 
+            // label11
+            // 
+            label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.ImeMode = ImeMode.NoControl;
+            label11.Location = new Point(24, 660);
+            label11.Name = "label11";
+            label11.Size = new Size(207, 25);
+            label11.TabIndex = 40;
+            label11.Text = "Already have account? ";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(72, 521);
+            label10.Name = "label10";
+            label10.Size = new Size(0, 25);
+            label10.TabIndex = 38;
+            label10.Click += label10_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Black;
+            button1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(216, 573);
+            button1.Name = "button1";
+            button1.Size = new Size(293, 55);
+            button1.TabIndex = 36;
+            button1.Text = "Create Account";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // label9
             // 
             label9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -123,13 +179,13 @@
             textBox6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox6.Location = new Point(376, 171);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(283, 39);
+            textBox6.Size = new Size(264, 39);
             textBox6.TabIndex = 34;
             // 
             // monthCalendar2
             // 
             monthCalendar2.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            monthCalendar2.Location = new Point(376, 375);
+            monthCalendar2.Location = new Point(387, 366);
             monthCalendar2.Name = "monthCalendar2";
             monthCalendar2.TabIndex = 33;
             // 
@@ -141,6 +197,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(335, 39);
             textBox5.TabIndex = 31;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // textBox3
             // 
@@ -273,7 +330,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ImeMode = ImeMode.NoControl;
-            label3.Location = new Point(23, 139);
+            label3.Location = new Point(18, 138);
             label3.Name = "label3";
             label3.Size = new Size(159, 31);
             label3.TabIndex = 16;
@@ -308,62 +365,7 @@
             // 
             printDialog1.UseEXDialog = true;
             // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(216, 573);
-            button1.Name = "button1";
-            button1.Size = new Size(293, 55);
-            button1.TabIndex = 36;
-            button1.Text = "Create Account";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(72, 521);
-            label10.Name = "label10";
-            label10.Size = new Size(0, 25);
-            label10.TabIndex = 38;
-            label10.Click += label10_Click;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            radioButton3.Location = new Point(24, 508);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(279, 29);
-            radioButton3.TabIndex = 39;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Accept our terms and policies";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.ImeMode = ImeMode.NoControl;
-            label11.Location = new Point(24, 660);
-            label11.Name = "label11";
-            label11.Size = new Size(207, 25);
-            label11.TabIndex = 40;
-            label11.Text = "Already have account? ";
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(237, 660);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(107, 25);
-            linkLabel1.TabIndex = 41;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Login here";
-            // 
-            // Register
+            // SignupWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -373,7 +375,7 @@
             ClientSize = new Size(1264, 794);
             Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Register";
+            Name = "SignupWindow";
             Text = "Register";
             Load += RegisterWindow_Load;
             BackColorChanged += label1_Click;
@@ -405,9 +407,9 @@
         private TextBox textBox6;
         private MonthCalendar monthCalendar2;
         private Button button1;
-        private RadioButton radioButton3;
         private Label label10;
         private Label label11;
         private LinkLabel linkLabel1;
+        private CheckBox checkBox1;
     }
 }

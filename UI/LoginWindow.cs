@@ -5,6 +5,8 @@
         public Login()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen; // Đặt form ở giữa màn hình (từ yêu cầu trước)
+            this.AutoScaleMode = AutoScaleMode.Dpi; // Tự động điều chỉnh theo DPI màn hình
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -38,6 +40,11 @@
         }
 
         private void buttonSU_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBG_Click(object sender, EventArgs e)
         {
 
         }

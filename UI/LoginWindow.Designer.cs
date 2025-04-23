@@ -58,6 +58,7 @@
             pictureBG.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBG.TabIndex = 0;
             pictureBG.TabStop = false;
+            pictureBG.Click += pictureBG_Click;
             // 
             // labelSI
             // 

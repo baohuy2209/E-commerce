@@ -5,6 +5,9 @@
         public SignupWindow()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen; // Đặt form ở giữa màn hình (từ yêu cầu trước)
+            this.AutoScaleMode = AutoScaleMode.Dpi; // Tự động điều chỉnh theo DPI màn hình
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -93,6 +96,16 @@
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
 
         }

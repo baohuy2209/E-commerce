@@ -119,6 +119,7 @@
             pictureBG.Size = new Size(1208, 1055);
             pictureBG.TabIndex = 2;
             pictureBG.TabStop = false;
+            pictureBG.Click += pictureBG_Click;
             // 
             // pictureBox2
             // 
@@ -190,6 +191,7 @@
             buttonAccount.TabIndex = 5;
             buttonAccount.Text = "Account";
             buttonAccount.UseVisualStyleBackColor = true;
+            buttonAccount.Click += buttonAccount_Click;
             // 
             // labelTitle
             // 
@@ -228,6 +230,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 9;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // MainWindow
             // 

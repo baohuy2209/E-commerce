@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace UI
+﻿namespace UI
 {
     public partial class MainWindow : Form
     {
         public MainWindow()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen; // Đặt form ở giữa màn hình (từ yêu cầu trước)
+            this.AutoScaleMode = AutoScaleMode.Dpi; // Tự động điều chỉnh theo DPI màn hình
         }
         private void MainWindow_Load(object sender, EventArgs e)
         {
@@ -31,6 +23,28 @@ namespace UI
         private void labelSP2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBG_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAccount_Click(object sender, EventArgs e)
+        {
+            // Tạo instance của LoginWindow
+            LoginWindow loginWindow = new LoginWindow();
+
+            // Hiển thị LoginWindow
+            loginWindow.Show();
+
+            // Ẩn MainWindow
+            this.Hide();
         }
     }
 }

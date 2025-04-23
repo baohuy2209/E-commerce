@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class ReEnterPasswordWindow
+    partial class PasscodePasswordWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReEnterPasswordWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasscodePasswordWindow));
             buttonChangePassword = new Button();
             label2 = new Label();
             label1 = new Label();
             textBoxNewPassword = new TextBox();
-            label3 = new Label();
-            textBoxReenterPassword = new TextBox();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -43,61 +41,41 @@
             buttonChangePassword.BackColor = SystemColors.ActiveCaptionText;
             buttonChangePassword.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonChangePassword.ForeColor = SystemColors.ButtonHighlight;
-            buttonChangePassword.Location = new Point(368, 421);
+            buttonChangePassword.Location = new Point(373, 338);
             buttonChangePassword.Name = "buttonChangePassword";
             buttonChangePassword.Size = new Size(214, 38);
-            buttonChangePassword.TabIndex = 45;
-            buttonChangePassword.Text = "Change password";
+            buttonChangePassword.TabIndex = 52;
+            buttonChangePassword.Text = "Submit";
             buttonChangePassword.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(352, 177);
+            label2.Location = new Point(342, 183);
             label2.Name = "label2";
-            label2.Size = new Size(250, 21);
-            label2.TabIndex = 44;
-            label2.Text = "Please kindly set your new password";
+            label2.Size = new Size(273, 21);
+            label2.TabIndex = 51;
+            label2.Text = "Enter your passcode that send via email";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(292, 225);
+            label1.Location = new Point(293, 242);
             label1.Name = "label1";
-            label1.Size = new Size(117, 21);
-            label1.TabIndex = 43;
-            label1.Text = "New password";
+            label1.Size = new Size(78, 21);
+            label1.TabIndex = 50;
+            label1.Text = "Passcode";
             // 
             // textBoxNewPassword
             // 
             textBoxNewPassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxNewPassword.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxNewPassword.Location = new Point(292, 259);
+            textBoxNewPassword.Location = new Point(293, 276);
             textBoxNewPassword.Name = "textBoxNewPassword";
             textBoxNewPassword.Size = new Size(376, 39);
-            textBoxNewPassword.TabIndex = 42;
-            textBoxNewPassword.TextChanged += textBoxNewPassword_TextChanged;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(292, 311);
-            label3.Name = "label3";
-            label3.Size = new Size(148, 21);
-            label3.TabIndex = 46;
-            label3.Text = "Re-enter password";
-            // 
-            // textBoxReenterPassword
-            // 
-            textBoxReenterPassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxReenterPassword.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxReenterPassword.Location = new Point(292, 355);
-            textBoxReenterPassword.Name = "textBoxReenterPassword";
-            textBoxReenterPassword.Size = new Size(376, 39);
-            textBoxReenterPassword.TabIndex = 47;
+            textBoxNewPassword.TabIndex = 49;
             // 
             // button2
             // 
@@ -105,28 +83,26 @@
             button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Image = Properties.Resources.previous_icon;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(266, 482);
+            button2.Location = new Point(256, 479);
             button2.Name = "button2";
             button2.Size = new Size(60, 38);
-            button2.TabIndex = 54;
+            button2.TabIndex = 53;
             button2.UseVisualStyleBackColor = false;
             // 
-            // ReEnterPasswordWindow
+            // PasscodePasswordWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(958, 600);
             Controls.Add(button2);
-            Controls.Add(textBoxReenterPassword);
-            Controls.Add(label3);
             Controls.Add(buttonChangePassword);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBoxNewPassword);
-            Name = "ReEnterPasswordWindow";
-            Text = "ReEnterPasswordWindow";
-            Load += ReEnterPasswordWindow_Load;
+            Name = "PasscodePasswordWindow";
+            Text = "PasscodePasswordWindow";
+            Load += PasscodePasswordWindow_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,8 +113,6 @@
         private Label label2;
         private Label label1;
         private TextBox textBoxNewPassword;
-        private Label label3;
-        private TextBox textBoxReenterPassword;
         private Button button2;
     }
 }
