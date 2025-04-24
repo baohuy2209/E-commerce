@@ -37,6 +37,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "RoundedBox";
             Size = new Size(701, 195);
+            Load += RoundedBox_Load;
             ResumeLayout(false);
         }
 

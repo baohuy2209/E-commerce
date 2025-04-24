@@ -1,8 +1,8 @@
 ﻿namespace UI
 {
-    public partial class ResetPasswordWindow : Form
+    public partial class EmailPasswordWindow : Form
     {
-        public ResetPasswordWindow()
+        public EmailPasswordWindow()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen; // Đặt form ở giữa màn hình (từ yêu cầu trước)

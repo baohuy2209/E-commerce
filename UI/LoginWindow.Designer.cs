@@ -33,8 +33,6 @@
             labelSI = new Label();
             labelAU = new Label();
             labelInfo = new Label();
-            textboxEmail = new TextBox();
-            textboxPassword = new TextBox();
             labelE = new Label();
             labelO = new Label();
             buttonSI = new Button();
@@ -44,6 +42,10 @@
             linklabelFP = new LinkLabel();
             buttonSU = new Button();
             labelP = new Label();
+            textBoxNewPassword = new TextBox();
+            roundedBox1 = new RoundedBox();
+            textBox1 = new TextBox();
+            roundedBox2 = new RoundedBox();
             ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             SuspendLayout();
             // 
@@ -95,24 +97,6 @@
             labelInfo.Size = new Size(262, 225);
             labelInfo.TabIndex = 11;
             labelInfo.Text = resources.GetString("labelInfo.Text");
-            // 
-            // textboxEmail
-            // 
-            textboxEmail.Font = new Font("Segoe UI", 14F);
-            textboxEmail.Location = new Point(682, 268);
-            textboxEmail.Margin = new Padding(3, 2, 3, 2);
-            textboxEmail.Name = "textboxEmail";
-            textboxEmail.Size = new Size(336, 32);
-            textboxEmail.TabIndex = 12;
-            // 
-            // textboxPassword
-            // 
-            textboxPassword.Font = new Font("Segoe UI", 14F);
-            textboxPassword.Location = new Point(682, 368);
-            textboxPassword.Margin = new Padding(3, 2, 3, 2);
-            textboxPassword.Name = "textboxPassword";
-            textboxPassword.Size = new Size(336, 32);
-            textboxPassword.TabIndex = 12;
             // 
             // labelE
             // 
@@ -178,7 +162,7 @@
             checkboxKMLI.AutoSize = true;
             checkboxKMLI.BackColor = Color.Transparent;
             checkboxKMLI.ForeColor = SystemColors.ButtonHighlight;
-            checkboxKMLI.Location = new Point(682, 401);
+            checkboxKMLI.Location = new Point(682, 432);
             checkboxKMLI.Margin = new Padding(3, 2, 3, 2);
             checkboxKMLI.Name = "checkboxKMLI";
             checkboxKMLI.Size = new Size(125, 19);
@@ -191,7 +175,7 @@
             linklabelFP.AutoSize = true;
             linklabelFP.Font = new Font("Segoe UI", 9F);
             linklabelFP.LinkColor = Color.White;
-            linklabelFP.Location = new Point(913, 402);
+            linklabelFP.Location = new Point(913, 433);
             linklabelFP.Name = "linklabelFP";
             linklabelFP.Size = new Size(95, 15);
             linklabelFP.TabIndex = 14;
@@ -222,19 +206,67 @@
             labelP.TabIndex = 11;
             labelP.Text = "Password";
             // 
+            // textBoxNewPassword
+            // 
+            textBoxNewPassword.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxNewPassword.BorderStyle = BorderStyle.None;
+            textBoxNewPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxNewPassword.Location = new Point(691, 283);
+            textBoxNewPassword.Multiline = true;
+            textBoxNewPassword.Name = "textBoxNewPassword";
+            textBoxNewPassword.Size = new Size(327, 34);
+            textBoxNewPassword.TabIndex = 65;
+            // 
+            // roundedBox1
+            // 
+            roundedBox1.BackColor = Color.Transparent;
+            roundedBox1.BorderColor = Color.Black;
+            roundedBox1.BorderRadius = 15;
+            roundedBox1.BorderWidth = 2;
+            roundedBox1.Location = new Point(683, 276);
+            roundedBox1.Margin = new Padding(3, 2, 3, 2);
+            roundedBox1.Name = "roundedBox1";
+            roundedBox1.Size = new Size(342, 47);
+            roundedBox1.TabIndex = 64;
+            // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(691, 381);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(327, 34);
+            textBox1.TabIndex = 67;
+            // 
+            // roundedBox2
+            // 
+            roundedBox2.BackColor = Color.Transparent;
+            roundedBox2.BorderColor = Color.Black;
+            roundedBox2.BorderRadius = 15;
+            roundedBox2.BorderWidth = 2;
+            roundedBox2.Location = new Point(683, 374);
+            roundedBox2.Margin = new Padding(3, 2, 3, 2);
+            roundedBox2.Name = "roundedBox2";
+            roundedBox2.Size = new Size(342, 47);
+            roundedBox2.TabIndex = 66;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1203, 665);
+            Controls.Add(textBox1);
+            Controls.Add(roundedBox2);
+            Controls.Add(textBoxNewPassword);
+            Controls.Add(roundedBox1);
             Controls.Add(checkboxKMLI);
             Controls.Add(linklabelFP);
             Controls.Add(linklabelTAP);
             Controls.Add(linklabelRM);
             Controls.Add(buttonSU);
             Controls.Add(buttonSI);
-            Controls.Add(textboxPassword);
-            Controls.Add(textboxEmail);
             Controls.Add(labelP);
             Controls.Add(labelO);
             Controls.Add(labelE);
@@ -244,6 +276,7 @@
             Controls.Add(pictureBG);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBG).EndInit();
@@ -257,8 +290,6 @@
         private Label labelSI;
         private Label labelAU;
         private Label labelInfo;
-        private TextBox textboxEmail;
-        private TextBox textboxPassword;
         private Label labelE;
         private Label labelO;
         private Button buttonSI;
@@ -268,5 +299,9 @@
         private LinkLabel linklabelFP;
         private Button buttonSU;
         private Label labelP;
+        private TextBox textBoxNewPassword;
+        private RoundedBox roundedBox1;
+        private TextBox textBox1;
+        private RoundedBox roundedBox2;
     }
 }
