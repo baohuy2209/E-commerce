@@ -181,7 +181,7 @@
             labelCategory.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             labelCategory.AutoSize = true;
             labelCategory.Font = new Font("Segoe UI", 15.2F);
-            labelCategory.Location = new Point(86, 138);
+            labelCategory.Location = new Point(86, 141);
             labelCategory.Name = "labelCategory";
             labelCategory.Size = new Size(181, 36);
             labelCategory.TabIndex = 23;

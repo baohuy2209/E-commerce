@@ -36,16 +36,6 @@ namespace UI
             labelRSP3.Parent = pictureBG;
             labelRSP3.BackColor = Color.Transparent;
             //5sp
-            pictureboxStar1.Parent = pictureBG;
-            pictureboxStar1.BackColor = Color.Transparent;
-            pictureboxStar2.Parent = pictureBG;
-            pictureboxStar2.BackColor = Color.Transparent;
-            pictureboxStar3.Parent = pictureBG;
-            pictureboxStar3.BackColor = Color.Transparent;
-            pictureboxStar4.Parent = pictureBG;
-            pictureboxStar4.BackColor = Color.Transparent;
-            pictureboxStar5.Parent = pictureBG;
-            pictureboxStar5.BackColor = Color.Transparent;
 
             roundedboxStar.BringToFront();
 
