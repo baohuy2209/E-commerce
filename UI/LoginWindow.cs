@@ -48,5 +48,10 @@
         {
 
         }
+
+        private void linklabelTAP_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

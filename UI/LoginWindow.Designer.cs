@@ -29,23 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pictureBG = new PictureBox();
             labelSI = new Label();
             labelAU = new Label();
             labelInfo = new Label();
             labelE = new Label();
             labelO = new Label();
-            buttonSI = new Button();
             linklabelRM = new LinkLabel();
             linklabelTAP = new LinkLabel();
             checkboxKMLI = new CheckBox();
             linklabelFP = new LinkLabel();
-            buttonSU = new Button();
             labelP = new Label();
             textBoxNewPassword = new TextBox();
             roundedBox1 = new RoundedBox();
             textBox1 = new TextBox();
             roundedBox2 = new RoundedBox();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             SuspendLayout();
             // 
@@ -116,22 +120,11 @@
             labelO.BackColor = Color.Transparent;
             labelO.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelO.ForeColor = SystemColors.ButtonHighlight;
-            labelO.Location = new Point(833, 482);
+            labelO.Location = new Point(846, 498);
             labelO.Name = "labelO";
             labelO.Size = new Size(34, 25);
             labelO.TabIndex = 11;
             labelO.Text = "Or";
-            // 
-            // buttonSI
-            // 
-            buttonSI.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSI.Location = new Point(707, 476);
-            buttonSI.Margin = new Padding(3, 2, 3, 2);
-            buttonSI.Name = "buttonSI";
-            buttonSI.Size = new Size(112, 36);
-            buttonSI.TabIndex = 13;
-            buttonSI.Text = "Sign In";
-            buttonSI.UseVisualStyleBackColor = true;
             // 
             // linklabelRM
             // 
@@ -150,22 +143,24 @@
             linklabelTAP.AutoSize = true;
             linklabelTAP.Font = new Font("Segoe UI", 10F);
             linklabelTAP.LinkColor = Color.White;
-            linklabelTAP.Location = new Point(786, 523);
+            linklabelTAP.Location = new Point(797, 545);
             linklabelTAP.Name = "linklabelTAP";
             linklabelTAP.Size = new Size(119, 19);
             linklabelTAP.TabIndex = 14;
             linklabelTAP.TabStop = true;
             linklabelTAP.Text = "Terms and Policies";
+            linklabelTAP.LinkClicked += linklabelTAP_LinkClicked;
             // 
             // checkboxKMLI
             // 
             checkboxKMLI.AutoSize = true;
             checkboxKMLI.BackColor = Color.Transparent;
+            checkboxKMLI.Font = new Font("Segoe UI", 12F);
             checkboxKMLI.ForeColor = SystemColors.ButtonHighlight;
             checkboxKMLI.Location = new Point(682, 432);
             checkboxKMLI.Margin = new Padding(3, 2, 3, 2);
             checkboxKMLI.Name = "checkboxKMLI";
-            checkboxKMLI.Size = new Size(125, 19);
+            checkboxKMLI.Size = new Size(158, 25);
             checkboxKMLI.TabIndex = 15;
             checkboxKMLI.Text = "Keep me logged in";
             checkboxKMLI.UseVisualStyleBackColor = false;
@@ -173,26 +168,14 @@
             // linklabelFP
             // 
             linklabelFP.AutoSize = true;
-            linklabelFP.Font = new Font("Segoe UI", 9F);
+            linklabelFP.Font = new Font("Segoe UI", 12F);
             linklabelFP.LinkColor = Color.White;
-            linklabelFP.Location = new Point(913, 433);
+            linklabelFP.Location = new Point(898, 436);
             linklabelFP.Name = "linklabelFP";
-            linklabelFP.Size = new Size(95, 15);
+            linklabelFP.Size = new Size(127, 21);
             linklabelFP.TabIndex = 14;
             linklabelFP.TabStop = true;
             linklabelFP.Text = "Forgot password";
-            // 
-            // buttonSU
-            // 
-            buttonSU.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSU.Location = new Point(880, 476);
-            buttonSU.Margin = new Padding(3, 2, 3, 2);
-            buttonSU.Name = "buttonSU";
-            buttonSU.Size = new Size(116, 36);
-            buttonSU.TabIndex = 13;
-            buttonSU.Text = "Sign Up";
-            buttonSU.UseVisualStyleBackColor = true;
-            buttonSU.Click += buttonSU_Click;
             // 
             // labelP
             // 
@@ -252,11 +235,49 @@
             roundedBox2.Size = new Size(342, 47);
             roundedBox2.TabIndex = 66;
             // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderRadius = 9;
+            guna2Button1.CustomizableEdges = customizableEdges1;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.Black;
+            guna2Button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(683, 485);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button1.Size = new Size(151, 45);
+            guna2Button1.TabIndex = 74;
+            guna2Button1.Text = "Sign in";
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.BorderRadius = 9;
+            guna2Button2.CustomizableEdges = customizableEdges3;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.Black;
+            guna2Button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.Location = new Point(889, 485);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Button2.Size = new Size(136, 45);
+            guna2Button2.TabIndex = 75;
+            guna2Button2.Text = "Sign up";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1203, 665);
+            Controls.Add(guna2Button2);
+            Controls.Add(guna2Button1);
             Controls.Add(textBox1);
             Controls.Add(roundedBox2);
             Controls.Add(textBoxNewPassword);
@@ -265,8 +286,6 @@
             Controls.Add(linklabelFP);
             Controls.Add(linklabelTAP);
             Controls.Add(linklabelRM);
-            Controls.Add(buttonSU);
-            Controls.Add(buttonSI);
             Controls.Add(labelP);
             Controls.Add(labelO);
             Controls.Add(labelE);
@@ -292,16 +311,16 @@
         private Label labelInfo;
         private Label labelE;
         private Label labelO;
-        private Button buttonSI;
         private LinkLabel linklabelRM;
         private LinkLabel linklabelTAP;
         private CheckBox checkboxKMLI;
         private LinkLabel linklabelFP;
-        private Button buttonSU;
         private Label labelP;
         private TextBox textBoxNewPassword;
         private RoundedBox roundedBox1;
         private TextBox textBox1;
         private RoundedBox roundedBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
