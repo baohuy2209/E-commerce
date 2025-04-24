@@ -57,6 +57,7 @@
             // 
             // buttonHome
             // 
+            buttonHome.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonHome.BackColor = Color.Transparent;
             buttonHome.BackgroundImageLayout = ImageLayout.None;
             buttonHome.FlatStyle = FlatStyle.System;
@@ -70,6 +71,7 @@
             // 
             // buttonAbout
             // 
+            buttonAbout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonAbout.Font = new Font("Segoe UI", 15F);
             buttonAbout.Location = new Point(596, 34);
             buttonAbout.Name = "buttonAbout";
@@ -80,6 +82,7 @@
             // 
             // buttonCart
             // 
+            buttonCart.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonCart.Font = new Font("Segoe UI", 15F);
             buttonCart.Image = (Image)resources.GetObject("buttonCart.Image");
             buttonCart.Location = new Point(1178, 34);
@@ -90,6 +93,7 @@
             // 
             // buttonFAQ
             // 
+            buttonFAQ.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonFAQ.Font = new Font("Segoe UI", 15F);
             buttonFAQ.Location = new Point(877, 34);
             buttonFAQ.Name = "buttonFAQ";
@@ -100,6 +104,7 @@
             // 
             // buttonAccount
             // 
+            buttonAccount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonAccount.Font = new Font("Segoe UI", 15F);
             buttonAccount.Location = new Point(1027, 34);
             buttonAccount.Name = "buttonAccount";
@@ -110,6 +115,7 @@
             // 
             // buttonProducts
             // 
+            buttonProducts.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonProducts.Font = new Font("Segoe UI", 15F);
             buttonProducts.Location = new Point(732, 34);
             buttonProducts.Name = "buttonProducts";
@@ -120,11 +126,12 @@
             // 
             // pictureBG
             // 
-            pictureBG.BackgroundImage = Properties.Resources.MyCartBG1;
+            pictureBG.BackgroundImage = Properties.Resources.MyCartBG2;
             pictureBG.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBG.Location = new Point(0, -5);
+            pictureBG.Dock = DockStyle.Fill;
+            pictureBG.Location = new Point(0, 0);
             pictureBG.Name = "pictureBG";
-            pictureBG.Size = new Size(1262, 1278);
+            pictureBG.Size = new Size(1262, 753);
             pictureBG.TabIndex = 8;
             pictureBG.TabStop = false;
             // 

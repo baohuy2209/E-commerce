@@ -118,20 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MyCartBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MyCartBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MyCartBG2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MyCartBG2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoginBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainWinSale" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainWinSale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Homepic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Homepic2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EmptyStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EmptyStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HaveStar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HaveStar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyCartBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MyCartBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HaveStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HaveStar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductDetailsBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProductDetailsBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Homepic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Homepic1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,16 +154,31 @@
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ProductDetailsBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProductDetailsBG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainWinSale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainWinSale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProductSample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MainBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MainBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Homepic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Homepic2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemFrame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HaveStar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HaveStar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MyCartBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MyCartBG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ItemFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ItemFrame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SampleChair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SampleChair.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

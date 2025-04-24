@@ -35,6 +35,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Name = "RoundedBox";
+            Size = new Size(369, 139);
             ResumeLayout(false);
         }
 

@@ -15,8 +15,8 @@ namespace UI
             //DialogResult result = frmLogin.ShowDialog();
             //if(result == DialogResult.OK){}
 
-            //Application.Run(new Login());
-            Application.Run(new Login());
+            //Application.Run(new MainWindow());
+            Application.Run(new ProductDetails());
         }
     }
 }

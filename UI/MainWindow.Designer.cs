@@ -53,6 +53,7 @@
             // 
             // buttonCart
             // 
+            buttonCart.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonCart.Font = new Font("Segoe UI", 15F);
             buttonCart.Image = (Image)resources.GetObject("buttonCart.Image");
             buttonCart.Location = new Point(1159, 37);
@@ -63,6 +64,7 @@
             // 
             // buttonFAQ
             // 
+            buttonFAQ.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonFAQ.Font = new Font("Segoe UI", 15F);
             buttonFAQ.Location = new Point(864, 37);
             buttonFAQ.Name = "buttonFAQ";
@@ -73,6 +75,7 @@
             // 
             // buttonProducts
             // 
+            buttonProducts.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonProducts.Font = new Font("Segoe UI", 15F);
             buttonProducts.Location = new Point(713, 37);
             buttonProducts.Name = "buttonProducts";
@@ -83,6 +86,7 @@
             // 
             // buttonAbout
             // 
+            buttonAbout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonAbout.Font = new Font("Segoe UI", 15F);
             buttonAbout.Location = new Point(577, 37);
             buttonAbout.Name = "buttonAbout";
@@ -93,6 +97,7 @@
             // 
             // buttonHome
             // 
+            buttonHome.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonHome.BackColor = Color.Transparent;
             buttonHome.BackgroundImageLayout = ImageLayout.None;
             buttonHome.FlatStyle = FlatStyle.System;
@@ -184,6 +189,7 @@
             // 
             // buttonAccount
             // 
+            buttonAccount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonAccount.Font = new Font("Segoe UI", 15F);
             buttonAccount.Location = new Point(1008, 37);
             buttonAccount.Name = "buttonAccount";

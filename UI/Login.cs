@@ -12,6 +12,7 @@ namespace UI
 {
     public partial class Login : Form
     {
+        private System.Windows.Forms.Timer timer;
         public Login()
         {
             InitializeComponent();
@@ -19,6 +20,13 @@ namespace UI
 
         private void Login_Load(object sender, EventArgs e)
         {
+            //test
+            timer = new System.Windows.Forms.Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+
+            //Transparent
             labelSI.Parent = pictureBG;
             labelAU.Parent = pictureBG;
             labelInfo.Parent = pictureBG;
@@ -45,6 +53,15 @@ namespace UI
             //checkboxTAP.BackColor = Color.Transparent;
             buttonSI.BackColor = Color.Transparent;
             //pictureIcon.BackColor = Color.Transparent;
+
+        }
+        //Test
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            int clientWidth = this.ClientSize.Width;
+            int clientHeight = this.ClientSize.Height;
+            labelAU.Width = labelAU.Width * clientWidth / 1280;
+            labelAU.Height = labelAU.Height * clientHeight / 800;
         }
     }
 }

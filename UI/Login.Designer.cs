@@ -49,17 +49,19 @@
             // 
             // pictureBG
             // 
-            pictureBG.BackgroundImage = Properties.Resources.LoginBG;
+            pictureBG.BackgroundImage = Properties.Resources.LoginBG1;
             pictureBG.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBG.Location = new Point(0, -1);
+            pictureBG.Dock = DockStyle.Fill;
+            pictureBG.Location = new Point(0, 0);
             pictureBG.Name = "pictureBG";
-            pictureBG.Size = new Size(1266, 1143);
+            pictureBG.Size = new Size(1262, 753);
             pictureBG.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBG.TabIndex = 0;
             pictureBG.TabStop = false;
             // 
             // labelSI
             // 
+            labelSI.Anchor = AnchorStyles.Right;
             labelSI.AutoSize = true;
             labelSI.BackColor = Color.Transparent;
             labelSI.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
@@ -72,6 +74,7 @@
             // 
             // labelAU
             // 
+            labelAU.Anchor = AnchorStyles.Left;
             labelAU.AutoSize = true;
             labelAU.BackColor = Color.Transparent;
             labelAU.Font = new Font("Segoe UI", 30.2F, FontStyle.Bold);
@@ -84,6 +87,7 @@
             // 
             // labelInfo
             // 
+            labelInfo.Anchor = AnchorStyles.Left;
             labelInfo.AutoSize = true;
             labelInfo.BackColor = Color.Transparent;
             labelInfo.Font = new Font("Segoe UI", 13.8F);
@@ -96,27 +100,30 @@
             // 
             // textboxEmail
             // 
+            textboxEmail.Anchor = AnchorStyles.Right;
             textboxEmail.Font = new Font("Segoe UI", 14F);
-            textboxEmail.Location = new Point(712, 308);
+            textboxEmail.Location = new Point(712, 299);
             textboxEmail.Name = "textboxEmail";
             textboxEmail.Size = new Size(383, 39);
             textboxEmail.TabIndex = 12;
             // 
             // textboxPassword
             // 
+            textboxPassword.Anchor = AnchorStyles.Right;
             textboxPassword.Font = new Font("Segoe UI", 14F);
-            textboxPassword.Location = new Point(712, 424);
+            textboxPassword.Location = new Point(712, 415);
             textboxPassword.Name = "textboxPassword";
             textboxPassword.Size = new Size(383, 39);
             textboxPassword.TabIndex = 12;
             // 
             // labelE
             // 
+            labelE.Anchor = AnchorStyles.Right;
             labelE.AutoSize = true;
             labelE.BackColor = Color.Transparent;
             labelE.Font = new Font("Segoe UI", 13.8F);
             labelE.ForeColor = SystemColors.ButtonHighlight;
-            labelE.Location = new Point(712, 274);
+            labelE.Location = new Point(712, 265);
             labelE.Name = "labelE";
             labelE.Size = new Size(70, 31);
             labelE.TabIndex = 11;
@@ -124,11 +131,12 @@
             // 
             // labelO
             // 
+            labelO.Anchor = AnchorStyles.Right;
             labelO.AutoSize = true;
             labelO.BackColor = Color.Transparent;
             labelO.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelO.ForeColor = SystemColors.ButtonHighlight;
-            labelO.Location = new Point(887, 557);
+            labelO.Location = new Point(888, 532);
             labelO.Name = "labelO";
             labelO.Size = new Size(40, 31);
             labelO.TabIndex = 11;
@@ -136,8 +144,9 @@
             // 
             // buttonSI
             // 
+            buttonSI.Anchor = AnchorStyles.Right;
             buttonSI.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSI.Location = new Point(743, 548);
+            buttonSI.Location = new Point(744, 523);
             buttonSI.Name = "buttonSI";
             buttonSI.Size = new Size(128, 48);
             buttonSI.TabIndex = 13;
@@ -146,6 +155,7 @@
             // 
             // linklabelRM
             // 
+            linklabelRM.Anchor = AnchorStyles.Left;
             linklabelRM.AutoSize = true;
             linklabelRM.Font = new Font("Segoe UI", 10F);
             linklabelRM.LinkColor = Color.Black;
@@ -158,10 +168,11 @@
             // 
             // linklabelTAP
             // 
+            linklabelTAP.Anchor = AnchorStyles.Right;
             linklabelTAP.AutoSize = true;
             linklabelTAP.Font = new Font("Segoe UI", 10F);
             linklabelTAP.LinkColor = Color.White;
-            linklabelTAP.Location = new Point(833, 611);
+            linklabelTAP.Location = new Point(834, 586);
             linklabelTAP.Name = "linklabelTAP";
             linklabelTAP.Size = new Size(148, 23);
             linklabelTAP.TabIndex = 14;
@@ -170,10 +181,11 @@
             // 
             // checkboxKMLI
             // 
+            checkboxKMLI.Anchor = AnchorStyles.Right;
             checkboxKMLI.AutoSize = true;
             checkboxKMLI.BackColor = Color.Transparent;
             checkboxKMLI.ForeColor = SystemColors.ButtonHighlight;
-            checkboxKMLI.Location = new Point(712, 469);
+            checkboxKMLI.Location = new Point(712, 460);
             checkboxKMLI.Name = "checkboxKMLI";
             checkboxKMLI.Size = new Size(158, 24);
             checkboxKMLI.TabIndex = 15;
@@ -182,10 +194,11 @@
             // 
             // linklabelFP
             // 
+            linklabelFP.Anchor = AnchorStyles.Right;
             linklabelFP.AutoSize = true;
             linklabelFP.Font = new Font("Segoe UI", 9F);
             linklabelFP.LinkColor = Color.White;
-            linklabelFP.Location = new Point(975, 470);
+            linklabelFP.Location = new Point(975, 461);
             linklabelFP.Name = "linklabelFP";
             linklabelFP.Size = new Size(120, 20);
             linklabelFP.TabIndex = 14;
@@ -194,8 +207,9 @@
             // 
             // buttonSU
             // 
+            buttonSU.Anchor = AnchorStyles.Right;
             buttonSU.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonSU.Location = new Point(941, 548);
+            buttonSU.Location = new Point(942, 523);
             buttonSU.Name = "buttonSU";
             buttonSU.Size = new Size(133, 48);
             buttonSU.TabIndex = 13;
@@ -204,11 +218,12 @@
             // 
             // labelP
             // 
+            labelP.Anchor = AnchorStyles.Right;
             labelP.AutoSize = true;
             labelP.BackColor = Color.Transparent;
             labelP.Font = new Font("Segoe UI", 13.8F);
             labelP.ForeColor = SystemColors.ButtonHighlight;
-            labelP.Location = new Point(712, 390);
+            labelP.Location = new Point(712, 381);
             labelP.Name = "labelP";
             labelP.Size = new Size(110, 31);
             labelP.TabIndex = 11;
