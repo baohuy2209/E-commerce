@@ -56,7 +56,7 @@
             buttonCart.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonCart.Font = new Font("Segoe UI", 15F);
             buttonCart.Image = (Image)resources.GetObject("buttonCart.Image");
-            buttonCart.Location = new Point(1159, 37);
+            buttonCart.Location = new Point(1177, 26);
             buttonCart.Name = "buttonCart";
             buttonCart.Size = new Size(49, 51);
             buttonCart.TabIndex = 3;
@@ -66,7 +66,7 @@
             // 
             buttonFAQ.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonFAQ.Font = new Font("Segoe UI", 15F);
-            buttonFAQ.Location = new Point(864, 37);
+            buttonFAQ.Location = new Point(882, 26);
             buttonFAQ.Name = "buttonFAQ";
             buttonFAQ.Size = new Size(125, 51);
             buttonFAQ.TabIndex = 4;
@@ -77,7 +77,7 @@
             // 
             buttonProducts.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonProducts.Font = new Font("Segoe UI", 15F);
-            buttonProducts.Location = new Point(713, 37);
+            buttonProducts.Location = new Point(731, 26);
             buttonProducts.Name = "buttonProducts";
             buttonProducts.Size = new Size(129, 51);
             buttonProducts.TabIndex = 5;
@@ -88,7 +88,7 @@
             // 
             buttonAbout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonAbout.Font = new Font("Segoe UI", 15F);
-            buttonAbout.Location = new Point(577, 37);
+            buttonAbout.Location = new Point(595, 26);
             buttonAbout.Name = "buttonAbout";
             buttonAbout.Size = new Size(119, 51);
             buttonAbout.TabIndex = 6;
@@ -102,7 +102,7 @@
             buttonHome.BackgroundImageLayout = ImageLayout.None;
             buttonHome.FlatStyle = FlatStyle.System;
             buttonHome.Font = new Font("Segoe UI", 15F);
-            buttonHome.Location = new Point(434, 37);
+            buttonHome.Location = new Point(452, 26);
             buttonHome.Name = "buttonHome";
             buttonHome.Size = new Size(121, 51);
             buttonHome.TabIndex = 7;
@@ -111,11 +111,12 @@
             // 
             // pictureBG
             // 
-            pictureBG.BackgroundImage = (Image)resources.GetObject("pictureBG.BackgroundImage");
+            pictureBG.BackgroundImage = Properties.Resources.MainWindowBG;
             pictureBG.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBG.Location = new Point(-2, -6);
+            pictureBG.Dock = DockStyle.Fill;
+            pictureBG.Location = new Point(0, 0);
             pictureBG.Name = "pictureBG";
-            pictureBG.Size = new Size(1381, 1407);
+            pictureBG.Size = new Size(1262, 753);
             pictureBG.TabIndex = 2;
             pictureBG.TabStop = false;
             // 
@@ -124,13 +125,14 @@
             pictureBox2.Image = Properties.Resources.logo1;
             pictureBox2.Location = new Point(48, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(79, 76);
+            pictureBox2.Size = new Size(68, 65);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
             pictureBox3.Image = Properties.Resources.Homepic1;
             pictureBox3.Location = new Point(283, 345);
@@ -142,6 +144,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.None;
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Image = Properties.Resources.Homepic2;
             pictureBox4.Location = new Point(800, 343);
@@ -153,6 +156,7 @@
             // 
             // labelSP2
             // 
+            labelSP2.Anchor = AnchorStyles.None;
             labelSP2.AutoSize = true;
             labelSP2.BackColor = Color.Transparent;
             labelSP2.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -166,8 +170,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Left;
             pictureBox1.Image = Properties.Resources.MainWinSale;
-            pictureBox1.Location = new Point(1, 103);
+            pictureBox1.Location = new Point(0, 83);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(189, 784);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -176,6 +181,7 @@
             // 
             // labelSP1
             // 
+            labelSP1.Anchor = AnchorStyles.None;
             labelSP1.AutoSize = true;
             labelSP1.BackColor = Color.Transparent;
             labelSP1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -191,7 +197,7 @@
             // 
             buttonAccount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonAccount.Font = new Font("Segoe UI", 15F);
-            buttonAccount.Location = new Point(1008, 37);
+            buttonAccount.Location = new Point(1026, 26);
             buttonAccount.Name = "buttonAccount";
             buttonAccount.Size = new Size(119, 51);
             buttonAccount.TabIndex = 5;
@@ -200,11 +206,12 @@
             // 
             // labelTitle
             // 
+            labelTitle.Anchor = AnchorStyles.Top;
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
             labelTitle.Font = new Font("Segoe UI", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelTitle.ForeColor = SystemColors.ButtonHighlight;
-            labelTitle.Location = new Point(366, 135);
+            labelTitle.Location = new Point(409, 136);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(710, 89);
             labelTitle.TabIndex = 10;
@@ -213,11 +220,12 @@
             // 
             // labelFooter
             // 
+            labelFooter.Anchor = AnchorStyles.Bottom;
             labelFooter.AutoSize = true;
             labelFooter.BackColor = Color.Transparent;
             labelFooter.Font = new Font("Segoe UI Semilight", 15F, FontStyle.Italic, GraphicsUnit.Point, 0);
             labelFooter.ForeColor = SystemColors.ButtonHighlight;
-            labelFooter.Location = new Point(577, 815);
+            labelFooter.Location = new Point(506, 697);
             labelFooter.Name = "labelFooter";
             labelFooter.Size = new Size(487, 35);
             labelFooter.TabIndex = 10;

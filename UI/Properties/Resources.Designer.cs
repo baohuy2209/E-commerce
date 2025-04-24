@@ -193,6 +193,16 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MainWindowBG {
+            get {
+                object obj = ResourceManager.GetObject("MainWindowBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MainWinSale {
             get {
                 object obj = ResourceManager.GetObject("MainWinSale", resourceCulture);
