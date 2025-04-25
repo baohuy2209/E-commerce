@@ -16,7 +16,7 @@ namespace UI
             //if(result == DialogResult.OK){}
 
             //Application.Run(new MainWindow());
-            Application.Run(new MainWindow());
+            Application.Run(new ChangePassword());
         }
     }
 }
