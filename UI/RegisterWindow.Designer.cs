@@ -44,6 +44,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterWindow));
             groupBoxSignUp = new GroupBox();
+            label6 = new Label();
+            linkLabel2 = new LinkLabel();
+            button2 = new Button();
             guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,9 +65,6 @@
             label2 = new Label();
             label1 = new Label();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            button2 = new Button();
-            linkLabel2 = new LinkLabel();
-            label6 = new Label();
             groupBoxSignUp.SuspendLayout();
             SuspendLayout();
             // 
@@ -95,13 +95,49 @@
             groupBoxSignUp.Controls.Add(guna2TextBox1);
             groupBoxSignUp.FlatStyle = FlatStyle.Flat;
             groupBoxSignUp.Font = new Font("Segoe UI Black", 33F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBoxSignUp.Location = new Point(278, 69);
+            groupBoxSignUp.Location = new Point(278, 56);
             groupBoxSignUp.Name = "groupBoxSignUp";
             groupBoxSignUp.Size = new Size(723, 680);
             groupBoxSignUp.TabIndex = 0;
             groupBoxSignUp.TabStop = false;
             groupBoxSignUp.Text = "Sign up";
             groupBoxSignUp.Enter += groupBox1_Enter;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(244, 647);
+            label6.Name = "label6";
+            label6.Size = new Size(187, 23);
+            label6.TabIndex = 68;
+            label6.Text = "Already have account? ";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel2.Location = new Point(427, 647);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(52, 23);
+            linkLabel2.TabIndex = 67;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Login";
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.FlatAppearance.BorderColor = Color.White;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Image = Properties.Resources.previous_icon;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(618, 609);
+            button2.Name = "button2";
+            button2.Size = new Size(60, 38);
+            button2.TabIndex = 65;
+            button2.UseVisualStyleBackColor = false;
             // 
             // guna2TextBox5
             // 
@@ -287,6 +323,7 @@
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(72, 29);
             radioButton1.TabIndex = 10;
+            radioButton1.TabStop = true;
             radioButton1.Text = "Male";
             radioButton1.UseVisualStyleBackColor = true;
             // 
@@ -294,6 +331,7 @@
             // 
             gunaDateTimePicker.BackColor = Color.Transparent;
             gunaDateTimePicker.BorderRadius = 8;
+            gunaDateTimePicker.Checked = true;
             gunaDateTimePicker.CustomizableEdges = customizableEdges11;
             gunaDateTimePicker.FillColor = Color.White;
             gunaDateTimePicker.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -369,42 +407,6 @@
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2TextBox1.Size = new Size(638, 48);
             guna2TextBox1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Transparent;
-            button2.FlatAppearance.BorderColor = Color.White;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Image = Properties.Resources.previous_icon;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(618, 609);
-            button2.Name = "button2";
-            button2.Size = new Size(60, 38);
-            button2.TabIndex = 65;
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // linkLabel2
-            // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel2.Location = new Point(427, 647);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(52, 23);
-            linkLabel2.TabIndex = 67;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Login";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(244, 647);
-            label6.Name = "label6";
-            label6.Size = new Size(187, 23);
-            label6.TabIndex = 68;
-            label6.Text = "Already have account? ";
             // 
             // RegisterWindow
             // 

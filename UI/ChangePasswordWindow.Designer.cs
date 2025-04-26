@@ -159,6 +159,7 @@
             Name = "ChangePasswordWindow";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ChangePasswordWindow";
+            Load += ChangePasswordWindow_Load;
             ResumeLayout(false);
             PerformLayout();
         }

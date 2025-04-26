@@ -46,5 +46,25 @@
         {
 
         }
+
+        private void guna2Separator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPageDiscount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
