@@ -41,9 +41,9 @@
             pictureBox1 = new PictureBox();
             labelSP1 = new Label();
             buttonAccount = new Button();
-            labelTitle = new Label();
             labelFooter = new Label();
             pictureBox3 = new PictureBox();
+            labelTitle = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBG).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -193,19 +193,6 @@
             buttonAccount.UseVisualStyleBackColor = true;
             buttonAccount.Click += buttonAccount_Click;
             // 
-            // labelTitle
-            // 
-            labelTitle.AutoSize = true;
-            labelTitle.BackColor = Color.Transparent;
-            labelTitle.Font = new Font("Segoe UI", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelTitle.ForeColor = SystemColors.ButtonHighlight;
-            labelTitle.Location = new Point(381, 105);
-            labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(573, 72);
-            labelTitle.TabIndex = 10;
-            labelTitle.Text = "Welcome to our shop";
-            labelTitle.Click += labelSP2_Click;
-            // 
             // labelFooter
             // 
             labelFooter.AutoSize = true;
@@ -231,6 +218,20 @@
             pictureBox3.TabIndex = 9;
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
+            // 
+            // labelTitle
+            // 
+            labelTitle.AutoSize = true;
+            labelTitle.BackColor = Color.Transparent;
+            labelTitle.Font = new Font("Segoe UI", 40.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTitle.ForeColor = SystemColors.ButtonHighlight;
+            labelTitle.Location = new Point(381, 105);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(573, 72);
+            labelTitle.TabIndex = 10;
+            labelTitle.Text = "Welcome to our shop";
+            labelTitle.TextAlign = ContentAlignment.TopCenter;
+            labelTitle.Click += labelSP2_Click;
             // 
             // MainWindow
             // 
@@ -279,8 +280,8 @@
         private PictureBox pictureBox1;
         private Label labelSP1;
         private Button buttonAccount;
-        private Label labelTitle;
         private Label labelFooter;
         private PictureBox pictureBox3;
+        private Label labelTitle;
     }
 }

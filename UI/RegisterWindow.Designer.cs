@@ -331,7 +331,6 @@
             // 
             gunaDateTimePicker.BackColor = Color.Transparent;
             gunaDateTimePicker.BorderRadius = 8;
-            gunaDateTimePicker.Checked = true;
             gunaDateTimePicker.CustomizableEdges = customizableEdges11;
             gunaDateTimePicker.FillColor = Color.White;
             gunaDateTimePicker.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
